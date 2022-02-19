@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/niceSidebar.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="../wow.min.js"></script>
+    <script>new WOW().init(); </script>
 	<title>Рекрут</title>
 </head>
 <body>  	
 	<input type="checkbox" name="" checked="сhecked">
 	<span class="icon"></span>
 	<header>
-		<h1><a href="../index.html">Рекрут</a></h1>
+		<h1><a href="../">Рекрут</a></h1>
 		<ul>
 			<li><a href="../webpage.html">&lt;Web/Разработка&gt;</a></li>
 			<li><a href="../designpage/designpage.html">Дизайн</a></li>
@@ -20,14 +23,34 @@
 		</ul>
 	</header>
 	<section id="portfolio">
-		<h2><a href="#">Фото/Видео</a></h2>
+		<h2 class="wow fadeInDown"><a href="#">Фото/Видео</a></h2>
 		<div class="sectionContent">
-			<h3>Фото :</h3>
+			<h3 class="wow fadeInDown">Фото :</h3>
 			<div class="flex">
-				<a href="http://msk-construction.com/" class="workcard">
-					<img src="../portfolioImg/Screenshot_2.png" alt="">
-					<h4>МСК | website</h4>
-					<p>МСК — Международная Строительная Компания<br><br>Разработано совместно с "ООО Эсфераль".</p>
+				<a href="peoplePhoto.html" class="workcard wow fadeInLeft">
+					<img src="peoplePhoto/DSC01049.jpg" alt="">
+					<h4>Портреты</h4>
+				</a>
+				<a href="foodPhoto.html" class="workcard wow fadeInRight">
+					<img src="foodPhoto/DSC05341.jpg" alt="">
+					<h4>Фуд фото</h4>
+				</a>
+			</div>
+		</div>
+		<div class="sectionContent">
+			<h3 class="wow fadeInUp">Видео :</h3>
+			<div class="flex">
+				<a href="KalinaShop.html" class="workcard wow fadeInUp">
+					<img src="video/Screenshot_1.png" alt="">
+					<h4>Магазин Калина</h4>
+				</a>
+				<a href="SpenglerInfographics.html" class="workcard wow fadeInUp">
+					<img src="video/Screenshot_5.png" alt="">
+					<h4>Инфографика Шпенглер</h4>
+				</a>
+				<a href="pandaAndCrane.html" class="workcard wow fadeInUp">
+					<img src="video/Screenshot_3.png" alt="">
+					<h4>Панда и Журавль</h4>
 				</a>
 			</div>
 		</div>

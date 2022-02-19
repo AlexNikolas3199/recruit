@@ -6,6 +6,8 @@ body{
 	padding: 0;
 	font-family: consolas;
 	overflow-x: hidden;
+	min-height: 100vh;
+	position: relative;
 }
 input[type="checkbox"]{
 	display: none;
@@ -29,6 +31,17 @@ header{
 	background: #000;
 	transition: 0.5s;
 	z-index: 100000;
+	animation: 0.7s ease-in-out forwards header1
+}
+@keyframes header1{
+	0%{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 header ul{
 	list-style:none;
@@ -137,8 +150,15 @@ section .sectionContent .flex-c .activity p{
 	background-position: 50% 50%;
 	background-size: cover;
 }
+.videoSection{
+	min-height: calc(100vh - 100px)
+}
+.flex-c video{
+	width: 75%;
+	margin: 30px 0;
+}
 section .sectionContent .flex .workcard{
-	margin:0 0 50px 0;
+	margin:0 10px 50px 10px;
 	max-width: 400px;
 	text-decoration: none;
 	color:#000;
@@ -243,6 +263,40 @@ footer p{
 	margin-right: 20px;
 	padding:12.5px 0;
 	height: 25px
+}
+.designImgs{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cinemaImgs{
+	width: 50%
+}
+.designImgs img{
+	width: 50%;
+	margin-bottom: 100px;
+	filter: drop-shadow(5px 5px 7px #222);
+}
+.designImgs img:nth-child(even){
+	margin-left: 20%
+}
+.cinemaImgs img:nth-child(even){
+	margin-left: 20%
+}
+.cinemaImgs img{
+	width: 70%;
+	filter: drop-shadow(5px 5px 7px #000);
+}
+.designImgs:first-child{
+	margin-top:100px;
+}
+.cinemaImgs:first-child{
+	margin-top:100px;
+}
+.designImgs .wow.bigimg{
+	width: 95%;
+	margin-left: 0
 }
 @media screen and (max-width: 1450px){
 	section:first-of-type{
@@ -368,6 +422,27 @@ input[type= "checkbox" ] ~ .icon:before{
 	section .sectionContent .flex .workcard{
 		width: 95%;
 		min-height: 200px
+	}
+	.designImgs{
+		width: 100%;
+	}
+	.designImgs img{
+		width: 60%
+	}
+	.cinemaImgs{
+		width: 100%
+	}
+	.cinemaImgs img{
+		width: 90%
+		}
+	.designImgs img:nth-child(even){
+		margin-left: 0
+	}
+	.cinemaImgs img:nth-child(even){
+		margin-left:0
+	}
+	.flex-c video{
+		width: 95%;
 	}
 }
 
